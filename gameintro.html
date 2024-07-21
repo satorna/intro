@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Satorna | 游戏介绍</title>
+    <link rel="icon" href="https://satorna.github.io/image/webIcon.png"/>
+	<link rel="stylesheet" href="https://satorna.github.io/css/nav.css"/>
+	<link rel="stylesheet" href="https://satorna.github.io/css/footer.css"/>
+	<link rel="stylesheet" href="https://satorna.github.io/css/homePicArea.css"/>
+	<script src="https://satorna.github.io/js/main.js"></script>
+    <style>
+        @charset "utf-8";
+body{
+		width:100%;
+		height:100%;
+		background-color:rgb(226, 226, 236);
+    	justify-content: center;
+    	align-items: center;
+	}
+	::-webkit-scrollbar {
+    display: none;
+}
+	button:hover{cursor:pointer;}
+	#text{
+		font-weight:100;
+		color:black;
+	}
+	sup{font-size:10px;}
+	#title{line-height:0px;}
+	/*#texte{margin-left:15%;}*/
+	#title_don{font-size:40px;}
+	#title_chi{font-size:30px;}
+	#texte_don{font-size:18px;text-indent:24px;}
+	#texte_chi{font-size:15px;text-indent:24px;}
+	#bottom_div{
+		background-color:#00000133;
+		text-align:center;
+		width:100%;
+		color:rgb(255, 255, 255);
+		font-size:15px;
+		-webkit-text-stroke: 0.2px rgba(65, 92, 227, 0.651);
+	}
+	a{text-decoration:none;color:rgb(255, 255, 255);text-shadow: 2px 2px 5px rgba(255,144,155,0.5);}
+	#br{height:5px;}
+	#bg{
+		position: fixed;top: 0;left: 0;z-index: -1;
+		width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;
+		-webkit-filter: blur(12px) brightness(0.97);
+		filter: blur(12px) brightness(0.97);
+		-webkit-transform: scale(1);transform: scale(1);
+	}
+	#text{height: 100%;}
+	#rightdiv{
+		position: fixed;
+		right: 0px;
+		z-index: -1;
+	}
+	.intro{	
+		width:auto;padding: 10px;
+        margin-left: 25px;
+		margin-right: 40px;
+		font-family: sans-serif;
+		font-size: 1rem;
+    	font-weight: 300;
+    	line-height: 1.65;
+		letter-spacing: 1px;
+		/*border:3px solid #1e90ff;
+        box-shadow: 0 0 10px rgba(30,144,255,0.25),
+        	0 0 20px rgba(30,144,255,0.25),  
+        	0 0 30px rgba(30,144,255,0.25),  
+        	0 0 40px rgba(30,144,255,0.25),        
+        	0 0 100px rgba(30,144,255,0.25),  
+        	0 0 200px rgba(30,144,255,0.25),  
+        	0 0 300px rgba(30,144,255,0.1),  
+        	0 0 400px rgba(30,144,255,0.05);
+		border-image: linear-gradient(to top right, #1565c0, #000, #1565c0) 3;*/
+	}
+	#intro_line{
+		height: 400px;
+		width: 0px;
+		border: 1px solid rgba(255,255,255,0.5);
+		float: right;
+		margin-right: 70px;
+	}
+	#detail_line{
+		text-align: center;
+		height: 400px;
+		width: 0px;
+		border: 1px solid rgba(255,255,255,0.9);
+		float: right;
+		margin-right: 200px;
+	}
+	#homeImg{
+		border-radius:20px;
+	}
+	#lines{
+		height:0px;
+		border:0.01px solid rgba(255,255,255,0.2);
+		width:100%;
+	}
+	#tools{
+		line-height:0px;
+		border:none;
+		height:70px;
+		background-color:transparent;
+		width:100%;
+	}
+	#tools p{margin-bottom:25px;}
+	#tools_explain{margin-left:30px;color:rgb(100,100,100);font-size:15px;}
+	#tools_name{margin-left:30px;color:white;font-size:25px;}
+	#tools_name a:hover{color:rgb(102,153,255);}
+	#homeImg{cursor:pointer;}
+	#copyright{text-align:center;line-height: 10px;font-weight: 100;}
+	#introduce{height:150px;}
+	#introduce span{font-weight:600;}
+    #errorImg{
+		border-radius:200px;
+		box-shadow: 0 0 10px rgba(30,144,255,0.25),
+        	0 0 20px rgba(30,144,255,0.25),  
+        	0 0 30px rgba(30,144,255,0.25),  
+        	0 0 40px rgba(30,144,255,0.25),        
+        	0 0 100px rgba(30,144,255,0.25),  
+        	0 0 200px rgba(30,144,255,0.25);
+        width: 15%;
+        height: 15%;
+        display: none;
+	}
+	#point{
+		margin-left: -10px;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		background-color: aliceblue;
+	}
+	#point p{margin: auto;}
+	#texte h1{
+		letter-spacing: 1px;
+		border-left: 8px solid rgba(255,144,155,0.5);
+		padding-left: 12px;
+		font-weight: 100;
+	}
+    </style>
+</head>
+<body>
+<br>
+<img src="file:///C:/Users/dell/Desktop/编程/代码岛/DornGames/SATORNA/图片/gameIntro_bg.jpg" id="bg"/>
+<div id="nav">
+	<p>
+		<span id="navname1"><img src="https://satorna.github.io/image/TransparentLogo.png" id="logo" onclick="location.reload();"/></span>
+		&nbsp;&nbsp;
+		<button id="navbut1" onclick="window.open('https://satorna.github.io/','_self')">首页</button>
+		<button id="navbut2" onclick="window.open('https://satorna.github.io/role','_self')">角色</button>
+		<button id="navbut3" onclick="window.open('https://satorna.github.io/weapon','_self')">武器</button>
+		<button id="navbut4" onclick="window.open('https://satorna.github.io/material','_self')">物资</button>
+		<button id="navbut5" onclick="window.open('https://satorna.github.io/world','_self')">世界</button>
+		<button id="navbut6" onclick="window.open('https://satorna.github.io/litart','_self')">文艺馆</button>
+		<div>
+			<button id="navbut_user" onclick="window.open('https://satorna.github.io/login','_self')">社 区</button>
+			<button id="navName2" onclick="window.open('https://satorna.github.io/login','_self')"><img src="https://satorna.github.io/image/account_ui.png" id="loginLogo" onclick=""/></button>
+		</div>
+	</p>
+</div>
+
+<br><br><br>
+
+<div id="text">
+	<!--<div id="rightdiv">
+		<div id="detail_line">
+			<br>
+			<div id="point">1<span>世界观介绍</span></div>
+		</div>
+		<div id="intro_line">
+		</div>
+	</div>-->
+	<div class="intro">
+		<div id="texte">
+			<h1>游戏概述</h1>
+			<p id="texte_chi">
+				《Satorna》是由多恩星环DornGames自主研发的一款全新开放世界科幻游戏。玩家作为使用传送科技失败的「虚空旅者」，不慎出现在土星上的「湩国」。在这个人和神共存的国家，神被赋予「超科技」的能力。虽位居银河前列，该国内部却暗流涌动：外部势力策反死神，意图击垮湩国。作为被选中的人，你将游历湩国各处寻访众神，获得「星环之力」，并秉承众神之引领，与众神之意志并肩与策反势力展开斗争，并在「救赎之路」上揭开你与湩国前世今生的不解之缘。
+			</p>
+			<h1>世界观简介</h1>
+			<p id="texte_chi">
+				在太阳系一颗名为「土星」的神秘星球云层深处，有一个不为外界所了解的世界。这里有数块大陆数片海洋，组成了名为「Satornh」的世界。
+			</p>
+			<p id="texte_chi">
+				在土星北半球的哈哈海东岸，有伟大的「湩国」文明。湩国是银河系中最大、最强的国家。以大耳旗为国旗，《刺梨花开》为国歌，以"𣿅"为国徽，白凤凰为国鸟，兰花为国花。通用语言是𣿅语，首都臭都，此外还有46座城市共同履行首都职能。
+			</p>
+			<p id="texte_chi">
+				湩国是一个人与神共存的国家。这里的神被赋予一种被称为「超科技」的能力，即依照自己的意志对周围的理化环境作出一定改变，从而产生科学可解释但科技难以做到的现象。这里的神并不是高人一等的。众神与人民平起平坐，祂们只是扮演着在必要时刻挺身而出，使用能力稳定社会秩序的作用，除此以外与常人并无二异。
+			</p>
+			<p id="texte_chi">
+				湩国手握多种重要稀有元素的控制权，科技、经济、文化、军事、工业等各方面实力位于全银河系前列。其日益强盛让许多国家感到忌惮，某些强国暗中谋划通过向内部渗透的方式，循序渐进地做空湩国内部，从而击垮湩国。
+			</p>
+			<p id="texte_chi">
+				而湩国的死神已被外部势力策反，并将众神之首「Satorni」在土星核冻结了490年。湩国内部也时不时出现民众作乱，社会治安受到挑战，若再不干预则将礼崩乐坏。谁来挽大厦之将倾......
+			</p>
+		</div>
+	</div>
+	<br>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer id="bottom_div">
+	<div id="br"></div><div id="br"></div><div id="br"></div>
+	<div id="introduce">
+		<div id="intro_left_1st">
+			<div id="br"></div><div id="br"></div>
+			<img src="https://satorna.github.io/image/webIcon.png"/>
+			<img src="https://satorna.github.io/image/TransparentLogo.png" id="footer_logo"/>
+			<p>开 放 世 界 科 幻 游 戏</p>
+			<div id="br"></div>
+		</div>
+		<div id="intro_left_2st">
+			<p>
+			<span>游戏攻略</span><br>
+			<a href="https://satorna.github.io/intro/survivalwt.html">● 生存指南</a><br>
+			<a href="https://satorna.github.io/intro/travelwt.html">● 旅行指南</a><br>
+			<a href="https://satorna.github.io/intro/extrawt.html">● 进阶教程</a><br>
+			</p>
+			<div id="br"></div>
+		</div>
+		<div id="intro_left_3st">
+			<p>
+			<span>关于我们</span><br>
+			<a href="https://satorna.github.io/intro/gameintro.html">● 游戏介绍</a><br>
+			<a href="https://satorna.github.io/intro/groupintro.html">● 团队介绍</a><br>
+			</p>
+			<div id="br"></div>
+		</div>
+		<div id="intro_left_4st">
+			<p>
+			<span>服务协议</span><br>
+			<a href="https://satorna.github.io/seragr/eula.html">● 用户协议</a><br>
+			<a href="https://satorna.github.io/seragr/disclaimer.html">● 免责声明</a><br>
+			</p>
+			<div id="br"></div>
+		</div>
+	</div>
+	<div id="lines"></div>
+	<div id="copyright">
+		<div id="br"></div>
+		<p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+		<p>版权所有 © 2024 多恩星环DornGames   |   All right reserved.</p>
+		<p>Box3Pro : <a href="https://dao3.fun/profile/50450184">@DornGames</a> | Github : <a href="https://github.com/satorna">@satorna</a></p>
+		<div id="br"></div>
+	</div>
+</footer>
+
+</body>
+</html>
